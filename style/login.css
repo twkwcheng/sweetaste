@@ -1,0 +1,444 @@
+/* section user_login */
+section.user_login {
+  margin: 0 auto;
+  width: 780px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-areas: "login_panel connecting_social_media_panel";
+}
+
+section.user_login .login_panel {
+  background-color: #3F5D45;
+}
+
+section.user_login .login_panel h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #EAF0ED;
+  text-align: center;
+  padding: 40px;
+}
+
+section.user_login .login_panel .input_field_container {
+  margin: 0 30px;
+  /* border: 1px solid goldenrod; */
+}
+
+section.user_login .login_panel .input_field {
+  position: relative;
+}
+
+section.user_login .login_panel .input_field input {
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-size: 16px;
+  height: 56px;
+  /* width: 330px; */
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  /* padding: 30px; */
+  /* margin: 0 30px; */
+  padding-left: 60px;
+}
+
+section.user_login .login_panel .input_field input::placeholder {
+  font-family: "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  color: #8DA291;
+}
+
+section.user_login .login_panel .input_field input[type="text"],
+section.user_login .login_panel .input_field input[type="password"] {
+  margin-bottom: 16px;
+}
+
+section.user_login .login_panel .input_field i {
+  /* background-color: #999; */
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  /* left: 30px; */
+  left: 0;
+  color: #3F5D45;
+}
+
+section.user_login .login_panel .remember_me {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 30px;
+  color: #EAF0ED;
+  font-weight: 700;
+}
+
+section.user_login .login_panel .remember_me input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;  
+}
+
+section.user_login .login_panel .remember_me .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;  
+}
+
+section.user_login .login_panel .remember_me:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+section.user_login .login_panel .remember_me input:checked ~ .checkmark {
+  background-color: #FFE180;
+}
+
+section.user_login .login_panel .remember_me .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;  
+}
+
+section.user_login .login_panel .remember_me input:checked ~ .checkmark:after {
+  display: block;
+}
+
+section.user_login .login_panel .remember_me .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 8px;
+  border: solid #3F5D45;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+section.user_login .login_panel .login a {
+  display: block;
+  background-color: #FFE180;
+  text-align: center;
+  text-decoration: none;
+  color: #3F5D45;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 24px;
+}
+
+section.user_login .connecting_social_media_panel {
+  background-color: #EAF0ED;
+  margin: 15px 0;
+}
+
+section.user_login .connecting_social_media_panel h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #8DA291;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+section.user_login .connecting_social_media_panel .socail_media_container {
+  margin: 0 30px;
+  padding-bottom: 40px;
+}
+
+section.user_login .connecting_social_media_panel .social_media {
+  background-color: #fff;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* margin-bottom: 16px; */
+  margin-top: 16px;
+}
+
+/* section.user_login .connecting_social_media_panel .yahoo {
+  margin-bottom: 40px;
+} */
+
+section.user_login .connecting_social_media_panel a:hover .social_media {
+  /* color: #3F5D45; */
+  background-color: #FFE180;
+}
+
+/* section.user_login .connecting_social_media_panel a + a {
+  margin-top: 16px;
+} */
+
+section.user_login .connecting_social_media_panel .socail_media_container .facebook {
+  background-image: url("../images/ic-facebook-logotype.png");
+}
+
+section.user_login .connecting_social_media_panel .socail_media_container .google {
+  background-image: url("../images/ic-google.png");
+}
+
+section.user_login .connecting_social_media_panel .socail_media_container .yahoo {
+  background-image: url("../images/ic-yahoo.png");
+}
+
+@media (max-width: 375px) {
+  /* section user_login */
+  section.user_login {
+    /* margin: 0 auto; */
+    /* width: 780px; */
+    width: 100%;
+    /* margin-bottom: 60px; */
+    margin-bottom: 0;
+    /* display: grid; */
+    /* grid-template-areas: "login_panel connecting_social_media_panel"; */
+    display: block;
+  }
+
+  section.user_login .desktop {
+    display: none;
+  }
+  
+  section.user_login .login_panel {
+    /* background-color: #3F5D45; */
+  }
+
+  section.user_login .login_panel h1 {
+    /* font-size: 36px;
+    font-weight: 700;
+    color: #EAF0ED;
+    text-align: center;
+    padding: 40px; */
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile_bg {
+    display: block;
+    height: 116px;
+    width: 100%;
+    background-color: #EAF0ED;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile {
+    display: grid;
+    grid-auto-flow: column;
+    /* align-content: center;
+    align-items: center; */
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile a {
+    display: block;
+    height: 56px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #EAF0ED;
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile a:hover {
+    background-color: #FFE180;
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile .facebook {
+    background-image: url("../images/ic-facebook-logotype.png");
+    background-size: 83px 16px;
+    width: 83px;
+    height: 16px;
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile .google {
+    background-image: url("../images/ic-google.png");
+    background-size: 73px 24px;
+    width: 73px;
+    height: 24px;
+  }
+
+  section.user_login .login_panel .socail_media_container_mobile .yahoo {
+    background-image: url("../images/ic-yahoo.png");
+    background-size: 74px 17px;
+    width: 74px;
+    height: 17px;
+  }
+
+
+
+  section.user_login .login_panel .socail_media_container_mobile {
+    /* margin: 30px; */
+    margin: 0 30px;
+    background-color: #fff;
+  }
+
+  section.user_login .login_panel .input_field_container {
+    /* margin: 0 30px; */
+  }
+
+  section.user_login .login_panel .input_field {
+    /* position: relative; */
+  }
+
+  section.user_login .login_panel .input_field input {
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    font-size: 16px;
+    height: 56px;
+    /* width: 330px; */
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    /* padding: 30px; */
+    /* margin: 0 30px; */
+    padding-left: 60px;
+  }
+
+  section.user_login .login_panel .input_field input::placeholder {
+    font-family: "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    color: #8DA291;
+  }
+
+  section.user_login .login_panel .input_field input[type="text"],
+  section.user_login .login_panel .input_field input[type="password"] {
+    margin-bottom: 16px;
+  }
+
+  section.user_login .login_panel .input_field i {
+    /* background-color: #999; */
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    /* left: 30px; */
+    left: 0;
+    color: #3F5D45;
+  }
+
+  section.user_login .login_panel .remember_me {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 30px;
+    color: #EAF0ED;
+    font-weight: 700;
+  }
+
+  section.user_login .login_panel .remember_me input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;  
+  }
+
+  section.user_login .login_panel .remember_me .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;  
+  }
+
+  section.user_login .login_panel .remember_me:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  section.user_login .login_panel .remember_me input:checked ~ .checkmark {
+    background-color: #FFE180;
+  }
+
+  section.user_login .login_panel .remember_me .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;  
+  }
+
+  section.user_login .login_panel .remember_me input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  section.user_login .login_panel .remember_me .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid #3F5D45;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  section.user_login .login_panel .login a {
+    display: block;
+    background-color: #FFE180;
+    text-align: center;
+    text-decoration: none;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 24px;
+  }
+
+  section.user_login .connecting_social_media_panel {
+    background-color: #EAF0ED;
+    margin: 15px 0;
+  }
+
+  section.user_login .connecting_social_media_panel h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #8DA291;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  section.user_login .connecting_social_media_panel .socail_media_container {
+    margin: 0 30px;
+    padding-bottom: 40px;
+  }
+
+  section.user_login .connecting_social_media_panel .social_media {
+    background-color: #fff;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* margin-bottom: 16px; */
+    margin-top: 16px;
+  }
+
+  /* section.user_login .connecting_social_media_panel .yahoo {
+    margin-bottom: 40px;
+  } */
+
+  section.user_login .connecting_social_media_panel a:hover .social_media {
+    /* color: #3F5D45; */
+    background-color: #FFE180;
+  }
+
+  /* section.user_login .connecting_social_media_panel a + a {
+    margin-top: 16px;
+  } */
+
+  section.user_login .connecting_social_media_panel .socail_media_container .facebook {
+    background-image: url("../images/ic-facebook-logotype.png");
+  }
+
+  section.user_login .connecting_social_media_panel .socail_media_container .google {
+    background-image: url("../images/ic-google.png");
+  }
+
+  section.user_login .connecting_social_media_panel .socail_media_container .yahoo {
+    background-image: url("../images/ic-yahoo.png");
+  }
+
+}

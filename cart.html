@@ -41,7 +41,7 @@
       crossorigin="anonymous">
   <link rel="stylesheet" href="style/css_reset.css">
   <link rel="stylesheet" href="style/header_footer.css">
-  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/cart.css">
 </head>
 <body>
   <header>
@@ -51,17 +51,17 @@
       </a>
     </div>
     <div class="logo_mobile mobile">
-      <a href="#">
+      <a href="index.html">
         <img src="images/logotype.png" alt="logo">
       </a>
     </div>
     <div class="logo_desktop desktop">
-      <a href="#">
+      <a href="index.html">
         <img src="images/logo-all-dark.png" alt="logo">
       </a>
     </div>
     <div class="home desktop menu_item">
-      <a href="#">首頁</a>
+      <a href="index.html">首頁</a>
     </div>
     <div class="dessert desktop menu_item">
       <a href="dessert.html">甜點</a>
@@ -70,146 +70,91 @@
       <a href="login.html">登入</a>
     </div>
     <div class="cart">
-      <a href="cart.html">
+      <a href="#">
         <i class="material-icons">shopping_cart</i>
       </a>
     </div>
   </header>
-  <section class="switch">
-    <div class="container">
-      <div class="switch_bg"></div>
-      <div class="switch_items">
-        <ul>
-          <li class="selected_products">
-            <a href="#">
-              <div class="switch_content">
-                <div class="msg">本日精選</div>
-                <div class="bg_img"></div>
-              </div>
-            </a>
-          </li>
-          <li class="recommanded_products">
-            <a href="#">
-              <div class="switch_content">
-                <div class="msg">人氣推薦</div>
-                <div class="bg_img"></div>
-              </div>
-            </a>
-          </li>
-          <li class="new_products">
-            <a href="#">
-              <div class="switch_content">
-                <div class="msg">新品上市</div>
-                <div class="bg_img"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <article class="why_make_dessert">
-    <h2 class="article_title_img_mobile mobile"></h2>
-    <div class="article_bg_color"></div>
-    <div class="container">
-      <div class="article_img"></div>
-      <div class="article_content">
-        <h2>
-          <div class="article_title_img desktop"></div>
-        </h2>
-        <p>
-          青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。青山依舊在，幾度夕陽紅。
-        </p>
-        <p>
-          是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
-        </p>
-      </div>
-    </div>
-  </article>
-  <article class="why_eat_dessert">
-    <h2 class="article_title_img_mobile mobile"></h2>
-    <div class="article_bg_color"></div>
-    <div class="container">
-      <div class="article_img"></div>
-      <div class="article_content">
-        <h2>
-          <div class="article_title_img desktop"></div>
-        </h2>
-        <p>
-          青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。青山依舊在，幾度夕陽紅。
-        </p>
-        <p>
-          是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
-        </p>
-      </div>
-    </div>
-  </article>
-  <section class="filtered_procucts">
-    <div class="slogan"></div>
-    <div class="container">
+  <section class="cart">
+    <div class="order_list">
+      <h1>你的購物車</h1>
       <ul>
-        <li class="donut">
-          <div class="dessert_img">
-            <div class="tag">本日精選</div>
-            <div class="favorite_icon">
-              <a href="#">
-                <span class="container">
-                  <i class="material-icons not_favorite">favorite_border</i>
-                  <i class="material-icons favorite">favorite</i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="dessert_name_price">
+        <li class="cream">
+          <div class="dessert_img"></div>
+          <div class="name_price">
             <div class="name">焦糖馬卡龍</div>
             <div class="price">NT$ 450</div>
           </div>
-          <div class="add_cart">
-            <a href="#">加入購物車</a>
+          <div class="slider">
+            <div class="minus"><a href="#">-</a></div>
+            <div class="number">2</div>
+            <div class="plus"><a href="#">+</a></div>
+          </div>
+          <div class="sum">NT$ 900</div>
+          <div class="trash_can desktop">
+            <a href="#">
+              <i class="material-icons">delete_outline</i>
+            </a>
           </div>
         </li>
-        <li class="cake desktop">
-          <div class="dessert_img">
-            <div class="tag">本日精選</div>
-            <div class="favorite_icon">
-              <a href="#">
-                <span class="container">
-                  <i class="material-icons not_favorite">favorite_border</i>
-                  <i class="material-icons favorite">favorite</i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="dessert_name_price">
+        <li class="cake">
+          <div class="dessert_img"></div>
+          <div class="name_price">
             <div class="name">焦糖馬卡龍</div>
             <div class="price">NT$ 450</div>
           </div>
-          <div class="add_cart">
-            <a href="#">加入購物車</a>
+          <div class="slider">
+            <div class="minus"><a href="#">-</a></div>
+            <div class="number">2</div>
+            <div class="plus"><a href="#">+</a></div>
+          </div>
+          <div class="sum">NT$ 900</div>
+          <div class="trash_can desktop">
+            <a href="#">
+              <i class="material-icons">delete_outline</i>
+            </a>
           </div>
         </li>
-        <li class="flan desktop">
-          <div class="dessert_img">
-            <div class="tag">本日精選</div>
-            <div class="favorite_icon">
-              <a href="#">
-                <span class="container">
-                  <i class="material-icons not_favorite">favorite_border</i>
-                  <i class="material-icons favorite">favorite</i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="dessert_name_price">
+        <li class="pie">
+          <div class="dessert_img"></div>
+          <div class="name_price">
             <div class="name">焦糖馬卡龍</div>
             <div class="price">NT$ 450</div>
           </div>
-          <div class="add_cart">
-            <a href="#">加入購物車</a>
+          <div class="slider">
+            <div class="minus"><a href="#">-</a></div>
+            <div class="number">2</div>
+            <div class="plus"><a href="#">+</a></div>
+          </div>
+          <div class="sum">NT$ 900</div>
+          <div class="trash_can desktop">
+            <a href="#">
+              <i class="material-icons">delete_outline</i>
+            </a>
           </div>
         </li>
       </ul>
-    </div>      
+    </div>
+    <div class="summary">
+      <div class="container">
+        <h2 class="title">訂單摘要</h2>
+        <div class="sum item">
+          <div class="item_name">小計</div>
+          <div class="item_price">NT$ 2,700</div>
+        </div>
+        <div class="shipping item">
+          <div class="item_name">運費</div>
+          <div class="item_price">NT$ 300</div>
+        </div>
+        <div class="total_sum item">
+          <div class="item_name">總計</div>
+          <div class="item_price">NT$ 3,000</div>
+        </div>
+      </div>
+      <div class="checkout">
+        <a href="checkout.html">結帳</a>
+      </div>
+    </div>
   </section>
   <footer>
     <div class="footer_bg_top">

@@ -1,0 +1,155 @@
+/* section success */
+section.success {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 940px;
+}
+
+section.success .bg_img {
+  background-image: url("https://source.unsplash.com/wMzx2nBdeng");
+  width: 100%;
+  height: 460px;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  /* grid-auto-flow: row; */
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+section.success .progress_title {
+  margin-bottom: 50px;
+}
+
+section.success .progress_title .progress_step {
+  display: flex;
+  align-items: center;
+  width: 190px;
+}
+
+section.success .progress_title .progress_step .dot {
+  /* flex-grow: 1; */
+  max-width: 20px;
+  position: relative;
+  left: -2px;
+  top: 1px;
+  color: #3F5D45;
+}
+
+section.success .progress_title .progress_step .bar {
+  flex-grow: 1;
+  background-color: #3F5D45;
+  height: 2px;
+}
+
+section.success .bg_img h1.title {
+  background-image: url("../images/success.png");
+  width: 190px;
+  height: 46px;
+  margin-top: 30px;
+}
+
+section.success .bg_img .go_shopping a {
+  display: block;
+  text-decoration: none;
+  color: #3F5D45;
+  background-color: #FFE180;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+@media (max-width: 375px) {
+  /* section success */
+  section.success {
+    /* margin: 0 auto;
+    margin-bottom: 60px;
+    width: 940px; */
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  section.success .bg_img {
+    /* background-image: url("https://source.unsplash.com/wMzx2nBdeng");
+    width: 100%;
+    height: 460px;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center; */
+    height: 518px;
+  }
+
+  section.success .bg_img .desktop {
+    display: none;
+  }
+
+  section.success .progress_title {
+    /* margin-bottom: 50px; */
+    margin-bottom: 0;
+  }
+
+  section.success .go_shopping_mobile {
+    display: block;
+  }
+
+  section.success .go_shopping_mobile a {
+    display: block;
+    /* width: 100%; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    background-color: #FFE180;
+  }
+
+  /* 以下沒用到 */
+
+  section.success .progress_title .progress_step {
+    display: flex;
+    align-items: center;
+    width: 190px;
+  }
+
+  section.success .progress_title .progress_step .dot {
+    /* flex-grow: 1; */
+    max-width: 20px;
+    position: relative;
+    left: -2px;
+    top: 1px;
+    color: #3F5D45;
+  }
+
+  section.success .progress_title .progress_step .bar {
+    flex-grow: 1;
+    background-color: #3F5D45;
+    height: 2px;
+  }
+
+  section.success .bg_img h1.title {
+    background-image: url("../images/success.png");
+    width: 190px;
+    height: 46px;
+    margin-top: 30px;
+  }
+
+  section.success .bg_img .go_shopping a {
+    display: block;
+    text-decoration: none;
+    color: #3F5D45;
+    background-color: #FFE180;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+
+}

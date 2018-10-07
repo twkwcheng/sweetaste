@@ -1,0 +1,763 @@
+/* section switch */
+section.switch .container {
+}
+
+section.switch .switch_bg {
+}
+
+section.switch .switch_items {
+  margin: 0 auto;
+  width: 780px;
+  /* height: 256px; */
+  position: relative;
+  top: -60px;
+}
+
+section.switch .switch_items ul {
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-content: space-around; */
+  /* grid-template-areas: "selected_products recommanded_products new_products"; */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.switch .switch_items li {
+  /* border: 1px solid goldenrod; */
+  /* display: grid;
+  justify-items: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* section.switch .switch_items li.selected_products .switch_content .msg ,
+section.switch .switch_items li.selected_products .switch_content .bg_img {
+  position: relative;
+  top: 0;
+} */
+
+section.switch .switch_items li.selected_products .switch_content {
+  position: relative;
+}
+
+section.switch .switch_items li.selected_products .bg_img {
+  /* grid-area: selected_products; */
+  background-image: url("https://source.unsplash.com/GTMGG-xvxdU");
+  position: absolute;
+  width: calc(780px/3);
+  top: 0;
+  right: -115px;
+  height: 100%;
+  /* top: -20px; */
+  /* z-index: -1; */
+  opacity: 0.3;
+  filter: blur(4px);
+  background-size: cover;
+}
+
+section.switch .switch_items li.recommanded_products .bg_img {
+  /* grid-area: selected_products; */
+  background-image: url("https://source.unsplash.com/qVQep55VTR4");
+  position: absolute;
+  width: calc(780px/3);
+  top: 0;
+  right: 260px;
+  height: 100%;
+  /* top: -20px; */
+  /* z-index: -1; */
+  opacity: 0.3;
+  filter: blur(4px);
+  background-size: cover;
+}
+
+section.switch .switch_items li.new_products .bg_img {
+  /* grid-area: selected_products; */
+  background-image: url("https://source.unsplash.com/AHovO6qOdFg");
+  position: absolute;
+  width: calc(780px/3);
+  top: 0;
+  right: 0;
+  height: 100%;
+  /* top: -20px; */
+  /* z-index: -1; */
+  opacity: 0.3;
+  filter: blur(4px);
+  background-size: cover;
+}
+
+section.switch .switch_items li.recommanded_products {
+  /* grid-area: selected_products; */
+}
+
+section.switch .switch_items li.new_products {
+  /* grid-area: selected_products; */
+}
+
+section.switch .switch_items li + li {
+  border-left: 1px solid #fff;
+}
+
+section.switch .switch_items li a {
+  /* display: block; */
+  /* flex-basis: 100%; */
+  background-color: #3F5D45;
+  color: #fff;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  height: 256px;
+  display: grid;
+  /* justify-items: center; */
+  align-items: center;
+}
+
+section.switch .switch_items li a:hover {
+  background-color: #FFE180;
+  color: #3F5D45;
+  font-weight: 900;
+}
+
+/* section.switch .switch_items li .today_special {
+  background-image: url("https://source.unsplash.com/nkHBFwVBzkg");
+  width: 100%;
+  height: 100%;
+} */
+
+section.switch .switch_bg {
+  background-image: url("https://source.unsplash.com/1HPTYLozDGw");
+  background-position: center center;
+  width: 940px;
+  height: 496px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+/* article: why make dessert */
+/* article: why eat dessert */
+article.why_make_dessert,
+article.why_eat_dessert {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+article.why_make_dessert .article_bg_color,
+article.why_eat_dessert .article_bg_color {
+  position: absolute;
+  background-color: #EAF0ED;
+  height: 420px;
+  width: 100%;
+  top: 20px;
+  z-index: 0;
+}
+
+article.why_make_dessert .container,
+article.why_eat_dessert .container {
+  width: 940px;
+  height: 460px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article.why_make_dessert .container .article_img,
+article.why_eat_dessert .container .article_img {
+  width: 460px;
+  height: 460px;
+  background-image: url("https://source.unsplash.com/zQLYPVt89d4");
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+article.why_eat_dessert .container .article_img {
+  background-image: url("https://source.unsplash.com/z5bPsP916QA");
+  order: 1;
+}
+
+article.why_make_dessert .container .article_content,
+article.why_eat_dessert .container .article_content {
+  writing-mode: vertical-rl;
+  z-index: 1;
+}
+
+article.why_make_dessert .container .article_content .article_title_img,
+article.why_eat_dessert .container .article_content .article_title_img {
+  background-image: url("../images/article_why_make_dessert.png");
+  width: 89px;
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  margin-left: 32px;
+}
+
+article.why_eat_dessert .container .article_content .article_title_img {
+  background-image: url("../images/article_why_eat_dessert.png");
+}
+
+article.why_eat_dessert .container .article_content h2 {
+  margin-right: 42px;
+}
+
+article.why_make_dessert .container .article_content p,
+article.why_eat_dessert .container .article_content p {
+  height: 280px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #8DA291;
+  margin-left: 32px;
+  margin-top: 90px;
+}
+
+/* filtered_procucts */
+section.filtered_procucts .slogan {
+  background-image: url("../images/slogan-section.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 90px;
+  height: 328px;
+  margin-bottom: 60px;
+}
+
+section.filtered_procucts .container {
+  width: 940px;
+  margin: 20px auto 60px auto;
+}
+
+section.filtered_procucts .container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.filtered_procucts .container li {
+  width: 300px;
+}
+
+section.filtered_procucts .container li .dessert_img {
+  /* width: 300px; */
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+section.filtered_procucts .container li.donut .dessert_img {
+  background-image: url("https://source.unsplash.com/POM4KxWZcG8");
+}
+
+section.filtered_procucts .container li.cake .dessert_img {
+  background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+}
+
+section.filtered_procucts .container li.flan .dessert_img {
+  background-image: url("https://source.unsplash.com/nLz2z-JvCe4");
+}
+
+section.filtered_procucts .container li .dessert_img .tag {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #3F5D45;
+  padding: 15px 10px;
+  color: #EAF0ED;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.2em;
+  /* position: absolute; */
+  position: relative;
+  /* top: 0; */
+  left: 10px;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon {
+  /* font-size: 20px;
+  letter-spacing: -20px; */
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a {
+  display: block;
+  color: #3F5D45;
+  text-decoration: none;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a .container {
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a .container i {
+  position: relative;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a .container i.not_favorite {
+  right: -28px;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a .container i.favorite {
+  visibility: hidden;
+}
+
+section.filtered_procucts .container li .dessert_img .favorite_icon a:hover .container .favorite {
+  visibility: visible;
+}
+
+section.filtered_procucts .container li .dessert_name_price {
+  font-size: 20px;
+  color: #3F5D45;
+  display: grid;
+  grid-template-columns: 172fr 127fr;
+  text-align: center;
+}
+
+section.filtered_procucts .container li .dessert_name_price .name {
+  font-weight: 300;
+}
+
+section.filtered_procucts .container li .dessert_name_price .price {
+  font-weight: 700;
+}
+
+section.filtered_procucts .container li .dessert_name_price div {
+  padding: 15px;
+  border: 1px solid #EAF0ED;
+}
+
+section.filtered_procucts .container li .dessert_name_price div + div {
+  border-left: none;
+}
+
+section.filtered_procucts .container li .add_cart {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section.filtered_procucts .container li .add_cart a {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+section.filtered_procucts .container li .add_cart a:hover {
+  background-color: #FFE180;
+}
+
+@media (max-width: 375px) {
+  section.switch .switch_items {
+    /* margin: 0 auto; */
+    /* width: 780px; */
+    /* height: 256px; */
+    /* position: relative; */
+    /* top: -60px; */
+    width: 100%;
+    height: 180px;
+    position: static;
+  }
+  
+  section.switch .switch_items ul {
+    display: grid;
+    grid-auto-flow: column;
+    /* justify-content: space-around; */
+    /* grid-template-areas: "selected_products recommanded_products new_products"; */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  section.switch .switch_items li {
+    /* border: 1px solid goldenrod; */
+    /* display: grid;
+    justify-items: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+  /* section.switch .switch_items li.selected_products .switch_content .msg ,
+  section.switch .switch_items li.selected_products .switch_content .bg_img {
+    position: relative;
+    top: 0;
+  } */
+  
+  section.switch .switch_items li.selected_products .switch_content {
+    /* position: relative; */
+    position: static;
+  }
+
+  section.switch .switch_items li a .switch_content {
+    /* position: relative; */
+    position: static;
+    /* width: 100%; */
+  }
+  
+  section.switch .switch_items li.selected_products .bg_img {
+    /* grid-area: selected_products; */
+    background-image: url("https://source.unsplash.com/GTMGG-xvxdU");
+    /* position: absolute; */
+    /* position: relative; */
+    /* width: calc(780px/3); */
+    width: 33.3333%;
+    top: 0;
+    /* right: -115px; */
+    /* right: 0; */
+    /* left: 0; */
+    right: 66.6666%;
+    /* height: 100%; */
+    height: 240px;
+    /* top: -20px; */
+    top: 365px;
+    /* z-index: -1; */
+    /* opacity: 0.3;
+    filter: blur(4px);
+    background-size: cover; */
+  }
+  
+  section.switch .switch_items li.recommanded_products .bg_img {
+    /* grid-area: selected_products; */
+    background-image: url("https://source.unsplash.com/qVQep55VTR4");
+    position: absolute;
+    /* width: calc(780px/3); */
+    width: 33.3333%;
+    top: 0;
+    /* right: 260px; */
+    right: 33.3333%;
+    /* height: 100%; */
+    height: 240px;
+    /* top: -20px; */
+    top: 365px;
+    /* z-index: -1; */
+    /* opacity: 0.3;
+    filter: blur(4px);
+    background-size: cover; */
+  }
+  
+  section.switch .switch_items li.new_products .bg_img {
+    /* grid-area: selected_products; */
+    background-image: url("https://source.unsplash.com/AHovO6qOdFg");
+    position: absolute;
+    /* width: calc(780px/3); */
+    width: 33.3333%;
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    height: 240px;
+    /* top: -20px; */
+    top: 365px;
+    /* z-index: -1; */
+    /* opacity: 0.3;
+    filter: blur(4px);
+    background-size: cover; */
+  }
+  
+  section.switch .switch_items li.recommanded_products {
+    /* grid-area: selected_products; */
+  }
+  
+  section.switch .switch_items li.new_products {
+    /* grid-area: selected_products; */
+  }
+  
+  section.switch .switch_items li + li {
+    /* border-left: 1px solid #fff; */
+  }
+  
+  section.switch .switch_items li a {
+    /* display: block; */
+    /* flex-basis: 100%; */
+    /* background-color: #3F5D45;
+    color: #fff;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    height: 256px;
+    display: grid; */
+    /* justify-items: center; */
+    /* align-items: center; */
+  }
+  
+  section.switch .switch_items li a:hover {
+    /* background-color: #FFE180;
+    color: #3F5D45;
+    font-weight: 900; */
+  }
+  
+  section.switch .switch_bg {
+    /* background-image: url("https://source.unsplash.com/1HPTYLozDGw"); */
+    width: 100%;
+    height: 277px;
+    background-size: cover;
+  }
+  
+  /* article: why make dessert */
+  /* article: why eat dessert */
+  article.why_make_dessert,
+  article.why_eat_dessert {
+    /* position: relative; */
+    /* margin-bottom: 60px; */
+    top: 60px;
+    margin-bottom: 0;
+  }
+  
+  article.why_make_dessert .article_bg_color,
+  article.why_eat_dessert .article_bg_color {
+    /* position: absolute;
+    background-color: #EAF0ED;
+    height: 420px;
+    width: 100%;
+    top: 20px;
+    z-index: 0; */
+    display: none;
+  }
+  
+  article.why_make_dessert .container,
+  article.why_eat_dessert .container {
+    /* width: 940px; */
+    /* height: 460px; */
+    /* overflow: hidden; */
+    /* margin: 0 auto; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    width: 100%;
+    height: inherit;
+    display: block;
+  }
+  
+  article.why_make_dessert .container .article_img,
+  article.why_eat_dessert .container .article_img {
+    /* width: 460px; */
+    /* height: 460px; */
+    width: 100%;
+    height: 250px;
+    /* background-image: url("https://source.unsplash.com/zQLYPVt89d4"); */
+    /* background-size: cover;
+    background-position: center center;
+    z-index: 1; */
+  }
+  
+  article.why_eat_dessert .container .article_img {
+    background-image: url("https://source.unsplash.com/z5bPsP916QA");
+    order: 1;
+  }
+  
+  article.why_make_dessert .container .article_content,
+  article.why_eat_dessert .container .article_content {
+    /* writing-mode: vertical-rl; */
+    /* z-index: 1; */
+    writing-mode: horizontal-tb;
+    background-color: #EAF0ED;
+  }
+  
+  article.why_make_dessert .container .article_content .article_title_img,
+  article.why_eat_dessert .container .article_content .article_title_img {
+    /* background-image: url("../images/article_why_make_dessert.png"); */
+    /* width: 89px; */
+    /* height: 100%; */
+    /* background-repeat: no-repeat; */
+    /* margin-left: 32px; */
+    display: none;
+  }
+  
+  article.why_eat_dessert .container .article_content .article_title_img {
+    /* background-image: url("../images/article_why_eat_dessert.png"); */
+    display: none;
+  }
+  
+  article.why_eat_dessert .container .article_content h2 {
+    /* margin-right: 42px; */
+    display: none;
+  }
+  
+  article.why_make_dessert .container .article_content p,
+  article.why_eat_dessert .container .article_content p {
+    /* height: 280px; */
+    /* font-size: 16px; */
+    /* line-height: 32px; */
+    /* color: #8DA291; */
+    /* margin-left: 32px; */
+    /* margin-top: 90px; */
+    margin: 0;
+    height: inherit;
+    padding: 30px;
+  }
+  
+  article h2.article_title_img_mobile {
+    width: 190px;
+    height: 59px;
+    display: block;
+    margin: 30px auto;
+  }
+
+  article.why_make_dessert h2.article_title_img_mobile {
+    /* margin: 0 auto; */
+    background-image: url("../images/article_why_make_dessert_mobile.png");
+  }
+
+  article.why_eat_dessert h2.article_title_img_mobile {
+    /* margin: 30px auto; */
+    background-image: url("../images/article_why_eat_dessert_mobile.png");
+  }
+  
+  /* filtered_procucts */
+  section.filtered_procucts {
+    position: relative;
+    top: 80px;
+
+  }
+
+  section.filtered_procucts .slogan {
+    background-image: url("../images/slogan-section.png");
+    /* background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 90px;
+    height: 328px;
+    margin-bottom: 60px; */
+    background-image: url("../images/slogan-section_mobile.png");
+    width: 209px;
+    height: 59px;
+    margin: 0 auto;
+  }
+
+  
+  section.filtered_procucts .container {
+    /* width: 940px;
+    margin: 20px auto 60px auto; */
+    width: 100%;
+  }
+  
+  section.filtered_procucts .container ul {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: block;
+  }
+  
+  section.filtered_procucts .container li {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  section.filtered_procucts .container li.desktop {
+    display: none;
+  }
+  
+  section.filtered_procucts .container li .dessert_img {
+    /* width: 300px; */
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+  
+  section.filtered_procucts .container li.donut .dessert_img {
+    background-image: url("https://source.unsplash.com/POM4KxWZcG8");
+  }
+  
+  section.filtered_procucts .container li.cake .dessert_img {
+    background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+  }
+  
+  section.filtered_procucts .container li.flan .dessert_img {
+    background-image: url("https://source.unsplash.com/nLz2z-JvCe4");
+  }
+  
+  section.filtered_procucts .container li .dessert_img .tag {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #3F5D45;
+    padding: 15px 10px;
+    color: #EAF0ED;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.2em;
+    /* position: absolute; */
+    position: relative;
+    /* top: 0; */
+    left: 10px;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon {
+    /* font-size: 20px;
+    letter-spacing: -20px; */
+    position: absolute;
+    top: 19px;
+    right: 22px;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a {
+    display: block;
+    color: #3F5D45;
+    text-decoration: none;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a .container {
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a .container i {
+    position: relative;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a .container i.not_favorite {
+    right: -28px;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a .container i.favorite {
+    visibility: hidden;
+  }
+  
+  section.filtered_procucts .container li .dessert_img .favorite_icon a:hover .container .favorite {
+    visibility: visible;
+  }
+  
+  section.filtered_procucts .container li .dessert_name_price {
+    font-size: 20px;
+    color: #3F5D45;
+    display: grid;
+    grid-template-columns: 172fr 127fr;
+    text-align: center;
+  }
+  
+  section.filtered_procucts .container li .dessert_name_price .name {
+    font-weight: 300;
+  }
+  
+  section.filtered_procucts .container li .dessert_name_price .price {
+    font-weight: 700;
+  }
+  
+  section.filtered_procucts .container li .dessert_name_price div {
+    padding: 15px;
+    border: 1px solid #EAF0ED;
+  }
+  
+  section.filtered_procucts .container li .dessert_name_price div + div {
+    border-left: none;
+  }
+  
+  section.filtered_procucts .container li .add_cart {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  section.filtered_procucts .container li .add_cart a {
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section.filtered_procucts .container li .add_cart a:hover {
+    background-color: #FFE180;
+  }
+  
+}

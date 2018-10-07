@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sweetaste:想吃甜點不需要理由</title>
+  <meta name="description" content="六角學院Sweetaste甜點電商切版PK賽"/>
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Sweetaste甜點電商" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://twkwcheng.github.io/sweetaste/" />
+  <meta property="og:image" content="https://twkwcheng.github.io/sweetaste/images/fb_intro.jpg" />
+  <meta property="og:description" content="六角學院Sweetaste甜點電商切版PK賽" />
+  <meta property="og:site_name" content="Sweetaste" />
+  <meta property="og:price:amount" content="1500.00" />
+  <meta property="og:price:currency" content="TWD" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- style -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="style/css_reset.css">
+  <link rel="stylesheet" href="style/header_footer.css">
+  <link rel="stylesheet" href="style/checkout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="menu_icon mobile">
+      <a href="#">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+    <div class="logo_mobile mobile">
+      <a href="index.html">
+        <img src="images/logotype.png" alt="logo">
+      </a>
+    </div>
+    <div class="logo_desktop desktop">
+      <a href="index.html">
+        <img src="images/logo-all-dark.png" alt="logo">
+      </a>
+    </div>
+    <div class="home desktop menu_item">
+      <a href="index.html">首頁</a>
+    </div>
+    <div class="dessert desktop menu_item">
+      <a href="dessert.html">甜點</a>
+    </div>
+    <div class="login desktop menu_item">
+      <a href="login.html">登入</a>
+    </div>
+    <div class="cart">
+      <a href="cart.html">
+        <i class="material-icons">shopping_cart</i>
+      </a>
+    </div>
+  </header>
+  <div class="wrapper_content">
+    <div class="main_panel">
+      <section class="shipping active">
+        <div class="container">
+          <div class="title_progress">
+            <h1 class="title">運送</h1>
+            <div class="progress_step">
+              <div class="dot">
+                <i class="material-icons">radio_button_checked</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_unchecked</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_unchecked</i>
+              </div>
+            </div>
+          </div>
+          <div class="input_field">
+            <div class="recipient">
+              <div class="family_name_group">
+                <div class="family_name field_name">姓氏</div>
+                <input type="text" name="family_name" id="family_name" required placeholder="王">
+              </div>
+              <div class="given_name_group">
+                <div class="given_name field_name">名字</div>
+                <input type="text" name="given_name" id="given_name" required placeholder="小明">
+              </div>
+            </div>
+            <div class="telephone">
+              <div class="phone_num field_name">電話</div>
+              <input type="tel" name="tel" id="tel" required placeholder="0912-345-678">
+            </div>
+            <div class="address">
+              <div class="recipient_address field_name">地址</div>
+              <div class="city_dist">
+                <select name="city" id="city">
+                  <option value="高雄市" class="option_list">高雄市</option>
+                </select>
+                <select name="dist" id="dist">
+                  <option value="新興區" class="option_list">新興區</option>
+                </select>
+              </div>
+              <input type="text" name="road" id="road" required placeholder="幸福路 520 號">
+            </div>
+          </div>
+        </div>
+        <div class="next">
+          <a href="#">下一步</a>
+        </div>
+      </section>
+      <section class="payment">
+        <div class="container">
+          <div class="title_progress">
+            <h1 class="title">付款</h1>
+            <div class="progress_step">
+              <div class="dot">
+                <i class="material-icons">check_circle</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_checked</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_unchecked</i>
+              </div>
+            </div>
+          </div>
+          <div class="input_field">
+            <div class="card_number_group">
+              <div class="card_number">
+                <div class="card_number_name field_name">信用卡卡號</div>
+                <input id="cardnumber" type="text" placeholder="9012-3456-7890-1234" required autocomplete="cc-number">
+                <div class="icon">
+                  <i class="material-icons">credit_card</i>
+                </div>
+              </div>
+            </div>
+            <div class="card_holder_group">
+              <div class="family_name_group">
+                <div class="card_holder_name field_name">持卡人姓名</div>
+                <input type="text" name="family_name" id="family_name" required placeholder="王">
+              </div>
+              <div class="given_name_group">
+                <input type="text" name="given_name" id="given_name" required placeholder="小明">
+              </div>
+            </div>
+            <div class="validate_date">
+              <div class="validate_date_month_group">
+                <div class="validate_date_name field_name">有效期限</div>
+                <input id="cc_exp_month" type="text" required placeholder="月" autocomplete="cc-exp-month">
+              </div>
+              <div class="validate_date_year_group">
+                <input id="cc_exp_year" type="text" required placeholder="年" autocomplete="cc-exp-year">
+              </div>
+            </div>
+            <div class="cvv">
+              <div class="cvv_group">
+                <div class="cvv_name field_name">背面末三碼</div>
+                <input id="cvc" required autocomplete="cc-csc" placeholder="123">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="next">
+          <a href="#">下一步</a>
+        </div>
+      </section>
+      <section class="invoice_virtual invoice">
+        <div class="container">
+          <div class="title_progress">
+            <h1 class="title">發票</h1>
+            <div class="progress_step">
+              <div class="dot">
+                <i class="material-icons">check_circle</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">check_circle</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_checked</i>
+              </div>
+            </div>
+          </div>
+          <div class="virtual_real">
+            <div class="virtual item active"><a href="#">電子發票</a></div>
+            <div class="real item"><a href="#">郵寄發票</a></div>
+          </div>
+          <div class="input_field">
+            <div class="email_group">
+              <div class="email">
+                <div class="email_name field_name">電子郵件信箱</div>
+                <input id="email" type="email" required placeholder="example@email.com">
+              </div>
+            </div>
+            <div class="tax_id_group">
+              <div class="tax_id">
+                <div class="tax_id_name field_name">統一編號（選填）</div>
+                <input type="text" name="tax_id" id="tax_id" placeholder="12345678">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout_success">
+          <a href="checkout-success.html">確認結帳</a>
+        </div>
+      </section>
+      <section class="invoice_real invoice">
+        <div class="container">
+          <div class="title_progress">
+            <h1 class="title">發票</h1>
+            <div class="progress_step">
+              <div class="dot">
+                <i class="material-icons">check_circle</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">check_circle</i>
+              </div>
+              <div class="bar"></div>
+              <div class="dot">
+                <i class="material-icons">radio_button_checked</i>
+              </div>
+            </div>
+          </div>
+          <div class="virtual_real">
+            <div class="virtual item"><a href="#">電子發票</a></div>
+            <div class="real item active"><a href="#">郵寄發票</a></div>
+          </div>
+          <div class="input_field">
+            <div class="address">
+              <div class="address_name_group">
+                <div class="invoice_address field_name">地址</div>
+                <label class="is_same_as_recipient">同運送地址<input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>              
+              </div>
+              <div class="city_dist">
+                <select name="city" id="city">
+                  <option value="高雄市" class="option_list">高雄市</option>
+                </select>
+                <select name="dist" id="dist">
+                  <option value="新興區" class="option_list">新興區</option>
+                </select>
+              </div>
+              <input type="text" name="road" id="road" required placeholder="幸福路 520 號">
+            </div>
+            <div class="tax_id_group">
+              <div class="tax_id">
+                <div class="tax_id_name field_name">統一編號（選填）</div>
+                <input type="text" name="tax_id" id="tax_id" placeholder="12345678">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout_success">
+          <a href="checkout-success.html">確認結帳</a>
+        </div>
+      </section>
+    </div>
+    <aside class="order desktop">
+      <div class="summary">
+        <h2 class="title">訂單摘要</h2>
+        <div class="container">
+          <div class="sum item">
+            <div class="item_name">小計</div>
+            <div class="item_price">NT$ 2,700</div>
+          </div>
+          <div class="shipping item">
+            <div class="item_name">運費</div>
+            <div class="item_price">NT$ 300</div>
+          </div>
+          <div class="total_sum item">
+            <div class="item_name">總計</div>
+            <div class="item_price">NT$ 3,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="order_list">
+        <h2 class="title">購物清單</h2>
+        <div class="container">
+          <ul>
+            <li class="cream">
+              <div class="dessert_img"></div>
+              <div class="name_price">
+                <div class="name">焦糖馬卡龍（2）</div>
+                <div class="price">NT$ 900</div>
+              </div>
+            </li>
+            <li class="cake">
+              <div class="dessert_img"></div>
+              <div class="name_price">
+                <div class="name">焦糖馬卡龍（2）</div>
+                <div class="price">NT$ 900</div>
+              </div>
+            </li>
+            <li class="pie">
+              <div class="dessert_img"></div>
+              <div class="name_price">
+                <div class="name">焦糖馬卡龍（2）</div>
+                <div class="price">NT$ 900</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer_bg_top">
+      <div class="container">
+        <div class="subscription">
+          <div class="description">
+            <img src="images/logo-light.png" alt="logo">
+            <h2>訂閱你我的甜蜜郵件</h2>
+          </div>
+          <div class="input_field">
+            <input type="text">
+            <span class="material-icons icon_email">email</span>
+            <a href="#"><span class="material-icons icon_arrow">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bg_bottom">
+      <div class="container">
+        <div class="contact_info">
+          <div class="contact">
+            <div class="logotype">
+              <img src="images/logotype.png" alt="logo">
+            </div>
+            <div class="contact_msg">
+              <p>07-1234-5678</p>
+              <p>sweetaste@email.com</p>
+              <p>800 高雄市新興區幸福路 520 號</p>
+            </div>
+            <div class="social_media">
+              <a href="#"><img src="images/ic-line@.png" alt="line"></a>
+              <a href="#"><img src="images/ic-facebook.png" alt="facebook"></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="slogan">
+              <img src="images/slogan-footer.png" alt="slogan">
+            </div>
+            <div class="copyright_msg">
+              <p>© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

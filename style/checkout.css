@@ -1,0 +1,680 @@
+.wrapper_content {
+  margin: 0 auto;
+  width: 780px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+
+/* section shipping */
+.main_panel section {
+  /* display: grid;
+  grid-template-areas: "order_list summary";
+  grid-gap: 20px;
+  align-items: start; */
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.main_panel section .container {
+  margin: 0 40px;
+  padding-bottom: 20px;
+}
+
+.main_panel section .container .title_progress {
+  /* margin: 30px 0; */
+  padding: 30px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+
+.main_panel section .container .title_progress h1.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main_panel section .container .title_progress .progress_step {
+  display: flex;
+  align-items: center;
+}
+
+.main_panel section .container .title_progress .progress_step .dot {
+  /* flex-grow: 1; */
+  max-width: 20px;
+  position: relative;
+  left: -2px;
+  top: 1px;
+}
+
+.main_panel section .container .title_progress .progress_step .bar {
+  flex-grow: 1;
+  background-color: #EAF0ED;
+  height: 2px;
+}
+
+.main_panel section .container .input_field .field_name {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.main_panel section .container .input_field input,
+.main_panel section .container .input_field select, 
+.main_panel section .container .input_field option {
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+  margin-bottom: 8px;
+  border: 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-family: "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+.main_panel section .container .input_field input::placeholder {
+  color: #8DA291;
+}
+
+.main_panel section.shipping .container .input_field .recipient {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+}
+
+.main_panel section.shipping .container .input_field .address .city_dist {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+}
+
+.main_panel section .next a,
+.main_panel section .checkout_success a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3F5D45;
+  background-color: #FFE180;
+  padding: 20px;
+} 
+
+/* section payment */
+.main_panel section.payment {
+}
+
+.main_panel section.payment .card_number {
+  position: relative;
+}
+
+.main_panel section.payment .card_number .icon {
+  color: #3F5D45;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}
+
+.main_panel section.payment .card_number input#cardnumber {
+  padding-right: 64px;
+}
+
+.main_panel section.payment .card_holder_group,
+.main_panel section.payment .validate_date,
+.main_panel section.payment .cvv {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  align-items: end;
+}
+
+.main_panel section.payment .cvv {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* section shipping */
+.main_panel section.shipping {
+}
+
+/* section invoice */
+.main_panel section.invoice {
+}
+
+.main_panel section.invoice .virtual_real {
+  display: grid;
+  grid-auto-flow: column;
+  margin-bottom: 30px;
+}
+
+.main_panel section.invoice .virtual_real .item a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #EAF0ED;
+}
+
+.main_panel section.invoice .virtual_real .active a {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.main_panel section.invoice .virtual_real .item a:hover {
+  background-color: #FFE180;
+  border-color: #FFE180;
+  color: #3F5D45;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;  
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;  
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient:hover input ~ .checkmark,
+.main_panel section.invoice_real .input_field .is_same_as_recipient:hover input:checked ~ .checkmark {
+  background-color: #FFE180;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient input:checked ~ .checkmark {
+  background-color: #EAF0ED;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 8px;
+  border: solid #3F5D45;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main_panel section.invoice_real .input_field .address_name_group {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.main_panel section.invoice_real .input_field .city_dist {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+}
+
+/* section success */
+.main_panel section.success {
+}
+
+aside.order h2.title {
+  color: #8DA291;
+  background-color: #EAF0ED;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px;
+}
+
+aside.order .container {
+  border: 1px solid #EAF0ED;
+  padding: 16px 20px;
+  color: #8DA291;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+aside.order .container .item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+aside.order .container .item + .item {
+  padding-top: 8px;
+}
+
+aside.order .container .total_sum {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+
+aside.order .order_list li .dessert_img {
+  background-position: center center;
+  background-size: cover;
+  width: 120px;
+  height: 80px;
+}
+
+aside.order .order_list li.cream .dessert_img {
+  background-image: url("https://source.unsplash.com/nkHBFwVBzkg");
+}
+
+aside.order .order_list li.cake .dessert_img {
+  background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+}
+
+aside.order .order_list li.pie .dessert_img {
+  background-image: url("https://source.unsplash.com/of0pMsWApZE");
+}
+
+aside.order .order_list li {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+aside.order .order_list li .name {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+aside.order .order_list li .price {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 8px;
+}
+
+aside.order .order_list li + li {
+  padding-top: 16px;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+@media (max-width: 375px) {
+  aside.desktop {
+    display: none;
+  }
+
+  .wrapper_content {
+    /* margin: 0 auto; */
+    /* width: 780px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px; */
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  /* section shipping */
+  .main_panel section {
+    /* display: grid;
+    grid-template-areas: "order_list summary";
+    grid-gap: 20px;
+    align-items: start; */
+    /* background-color: #3F5D45;
+    color: #EAF0ED; */
+  }
+  
+  .main_panel section .container {
+    /* margin: 0 40px;
+    padding-bottom: 20px; */
+    margin: 0 30px;
+  }
+  
+  /* 以下皆未修改使用 */
+
+  .main_panel section .container .title_progress {
+    /* margin: 30px 0; */
+    padding: 30px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+  
+  .main_panel section .container .title_progress h1.title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .main_panel section .container .title_progress .progress_step {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main_panel section .container .title_progress .progress_step .dot {
+    /* flex-grow: 1; */
+    max-width: 20px;
+    position: relative;
+    left: -2px;
+    top: 1px;
+  }
+  
+  .main_panel section .container .title_progress .progress_step .bar {
+    flex-grow: 1;
+    background-color: #EAF0ED;
+    height: 2px;
+  }
+  
+  .main_panel section .container .input_field .field_name {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  
+  .main_panel section .container .input_field input,
+  .main_panel section .container .input_field select, 
+  .main_panel section .container .input_field option {
+    font-size: 16px;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 8px;
+    border: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    font-family: "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  }
+  
+  .main_panel section .container .input_field input::placeholder {
+    color: #8DA291;
+  }
+  
+  .main_panel section.shipping .container .input_field .recipient {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+  }
+  
+  .main_panel section.shipping .container .input_field .address .city_dist {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+  }
+  
+  .main_panel section .next a,
+  .main_panel section .checkout_success a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    background-color: #FFE180;
+    padding: 20px;
+  } 
+  
+  /* section payment */
+  .main_panel section.payment {
+  }
+  
+  .main_panel section.payment .card_number {
+    position: relative;
+  }
+  
+  .main_panel section.payment .card_number .icon {
+    color: #3F5D45;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+  }
+  
+  .main_panel section.payment .card_number input#cardnumber {
+    padding-right: 64px;
+  }
+  
+  .main_panel section.payment .card_holder_group,
+  .main_panel section.payment .validate_date,
+  .main_panel section.payment .cvv {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    align-items: end;
+  }
+  
+  .main_panel section.payment .cvv {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* section shipping */
+  .main_panel section.shipping {
+  }
+  
+  /* section invoice */
+  .main_panel section.invoice {
+  }
+  
+  .main_panel section.invoice .virtual_real {
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 30px;
+  }
+  
+  .main_panel section.invoice .virtual_real .item a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+  }
+  
+  .main_panel section.invoice .virtual_real .active a {
+    background-color: #EAF0ED;
+    color: #3F5D45;
+  }
+  
+  .main_panel section.invoice .virtual_real .item a:hover {
+    background-color: #FFE180;
+    border-color: #FFE180;
+    color: #3F5D45;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;  
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;  
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient:hover input ~ .checkmark,
+  .main_panel section.invoice_real .input_field .is_same_as_recipient:hover input:checked ~ .checkmark {
+    background-color: #FFE180;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient input:checked ~ .checkmark {
+    background-color: #EAF0ED;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .main_panel section.invoice_real .input_field .is_same_as_recipient .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid #3F5D45;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .main_panel section.invoice_real .input_field .address_name_group {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  
+  .main_panel section.invoice_real .input_field .city_dist {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+  }
+  
+  /* section success */
+  .main_panel section.success {
+  }
+  
+  aside.order h2.title {
+    color: #8DA291;
+    background-color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  aside.order .container {
+    border: 1px solid #EAF0ED;
+    padding: 16px 20px;
+    color: #8DA291;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  aside.order .container .item {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  
+  aside.order .container .item + .item {
+    padding-top: 8px;
+  }
+  
+  aside.order .container .total_sum {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+  
+  
+  aside.order .order_list li .dessert_img {
+    background-position: center center;
+    background-size: cover;
+    width: 120px;
+    height: 80px;
+  }
+  
+  aside.order .order_list li.cream .dessert_img {
+    background-image: url("https://source.unsplash.com/nkHBFwVBzkg");
+  }
+  
+  aside.order .order_list li.cake .dessert_img {
+    background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+  }
+  
+  aside.order .order_list li.pie .dessert_img {
+    background-image: url("https://source.unsplash.com/of0pMsWApZE");
+  }
+  
+  aside.order .order_list li {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  aside.order .order_list li .name {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  aside.order .order_list li .price {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 8px;
+  }
+  
+  aside.order .order_list li + li {
+    padding-top: 16px;
+  }
+  
+  section {
+    display: none;
+  }
+  
+  section.active {
+    display: block;
+  }
+   
+}

@@ -1,0 +1,507 @@
+/* section head_picture */
+section.head_picture {
+  margin: 0 auto;
+  width: 940px;
+  margin-bottom: 60px;
+}
+
+section.head_picture .bg_img {
+  width: 100%;
+  height: 496px;
+  background-image: url("https://source.unsplash.com/GOG9Z4RQEsM");
+  background-size: cover;
+  position: relative;
+}
+
+section.head_picture .bg_img .slogan {
+  position: absolute;
+  background-image: url("../images/slogan-section.png");
+  width: 90px;
+  height: 328px;
+  background-repeat: no-repeat;
+  top: 40px;
+  right: 40px;
+}
+
+/* section products */
+section.products {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 940px;
+  display: grid;
+  grid-template-areas:
+   "products_catalog products_list"
+   ". products_list"
+   ". products_list"
+   ". products_pages";
+  grid-gap: 20px;
+  grid-template-columns: 300px 620px;
+}
+
+section.products .products_catalog {
+  grid-area: products_catalog;
+}
+
+section.products .products_list {
+  grid-area: products_list;
+}
+
+section.products .products_pages {
+  grid-area: products_pages;
+  justify-self: end;
+}
+
+
+section.products .products_catalog ul {
+}
+
+section.products .products_catalog li {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+section.products .products_catalog li.title {
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  padding: 16px;
+}
+
+section.products .products_catalog li a {
+  display: block;
+  color: #3F5D45;
+  padding: 16px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+section.products .products_catalog li.all a {
+  background-color: #EAF0ED;
+}
+
+section.products .products_catalog li a:hover {
+  background-color: #FFE180;
+}
+
+
+section.products .products_list {
+}
+
+section.products .products_list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+section.products .products_list li .dessert_img {
+  background-size: cover;
+  background-position: center center;
+  /* width: 300px; */
+  height: 315px;
+  position: relative;
+}
+
+section.products .products_list li .dessert_img .tag {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  font-size: 16px;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  position: relative;
+  left: 10px;
+  letter-spacing: 0.2em;
+  padding: 15px 10px;
+}
+
+section.products .products_list li .dessert_img .favorite_icon {
+  position: absolute;
+  top: 21px;
+  right: 18px;
+}
+
+section.products .products_list li .dessert_img .favorite_icon a {
+  text-decoration: none;
+  color: #3F5D45;
+}
+
+section.products .products_list li .dessert_img .favorite_icon a .container i {
+  position: relative;
+}
+
+section.products .products_list li .dessert_img .favorite_icon a .container i.not_favorite {
+  right: -28px;
+}
+
+section.products .products_list li .dessert_img .favorite_icon a .container i.favorite {
+  visibility: hidden;
+}
+
+section.products .products_list li .dessert_img .favorite_icon a:hover .container i.favorite {
+  visibility: visible;
+}
+
+section.products .products_list li.flan .dessert_img {
+  background-image: url("https://source.unsplash.com/MsTOg6rhRVk");
+}
+
+section.products .products_list li.donut .dessert_img {
+  background-image: url("https://source.unsplash.com/POM4KxWZcG8");
+}
+
+section.products .products_list li.pie .dessert_img {
+  background-image: url("https://source.unsplash.com/of0pMsWApZE");
+}
+
+section.products .products_list li.cookie .dessert_img {
+  background-image: url("https://source.unsplash.com/gw78G_i7GYo");
+}
+
+section.products .products_list li.cake .dessert_img {
+  background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+}
+
+section.products .products_list li.cream .dessert_img {
+  background-image: url("https://source.unsplash.com/PANMCipEL2Y");
+}
+
+section.products .products_list li .dessert_name_price {
+  display: grid;
+  grid-template-columns: 173fr 127fr;
+}
+
+section.products .products_list li .dessert_name_price div {
+  font-size: 20px;
+  padding: 15px;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+section.products .products_list li .dessert_name_price div + div {
+  border-left: none;
+}
+
+section.products .products_list li .add_cart {
+  text-align: center;
+}
+
+section.products .products_list li .add_cart a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  display: block;
+  padding: 20px;
+}
+
+section.products .products_list li .add_cart a:hover {
+  background-color: #FFE180;
+}
+
+section.products .products_pages {
+
+}
+
+section.products .products_pages ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 60px;
+}
+
+section.products .products_pages li {
+  text-align: center;
+  border: 1px solid #EAF0ED;
+}
+
+section.products .products_pages li + li {
+  border-left: none;
+}
+
+section.products .products_pages li a {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #3F5D45;
+  padding: 20px;
+}
+
+section.products .products_pages li a:hover {
+  background-color: #FFE180;
+}
+
+section.products .products_pages li.active a {
+  background-color: #3F5D45;
+  color: #EAF0ED
+}
+
+@media (max-width: 375px) {
+  /* section head_picture */
+  section.head_picture {
+    margin: 0 auto;
+    /* width: 940px; */
+    /* margin-bottom: 60px; */
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  section.head_picture .bg_img {
+    /* width: 100%; */
+    /* height: 496px; */
+    height: 277px;
+    /* background-image: url("https://source.unsplash.com/GOG9Z4RQEsM");
+    background-size: cover;
+    position: relative; */
+    background-position: center center;
+  }
+
+  section.head_picture .bg_img .slogan {
+    /* position: absolute;
+    background-image: url("../images/slogan-section.png"); */
+    /* width: 90px; */
+    /* height: 328px; */
+    width: 60px;
+    height: 218px;
+    background-size: 60px 218px;
+    /* background-repeat: no-repeat; */
+    top: 30px;
+    right: 20px;
+  }
+
+  /* section products */
+  section.products {
+    margin: 0 auto;
+    /* margin-bottom: 60px; */
+    margin-bottom: 0;
+    /* width: 940px; */
+    width: 100%;
+    display: grid;
+    /* grid-template-areas:
+    "products_catalog products_list"
+    ". products_list"
+    ". products_list"
+    ". products_pages"; */
+    grid-template-areas:
+    "products_catalog"
+    "products_list"
+    "products_pages";
+
+    /* grid-gap: 20px; */
+    /* grid-template-columns: 300px 620px; */
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  section.products .products_catalog {
+    grid-area: products_catalog;
+  }
+
+  section.products .products_list {
+    grid-area: products_list;
+  }
+
+  section.products .products_pages {
+    grid-area: products_pages;
+    /* justify-self: end; */
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+
+
+  section.products .products_catalog ul {
+    margin-bottom: 30px;
+  }
+
+  section.products .products_catalog li {
+    /* font-size: 24px;
+    font-weight: 700;
+    text-align: center; */
+  }
+
+  section.products .products_catalog li.title {
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    padding: 16px;
+  }
+
+  section.products .products_catalog li a {
+    /* display: block;
+    color: #3F5D45;
+    padding: 16px;
+    background-color: #fff;
+    text-decoration: none; */
+    border: 1px solid #EAF0ED;
+    border-top: 0;
+  }
+
+  section.products .products_catalog li.all a {
+    background-color: #EAF0ED;
+  }
+
+  section.products .products_catalog li a:hover {
+    background-color: #FFE180;
+  }
+
+
+  section.products .products_list {
+  }
+
+  section.products .products_list ul {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr;
+    /* grid-gap: 20px; */
+  }
+
+  section.products .products_list li.desktop {
+    display: none;
+  }
+
+  section.products .products_list li {
+    margin: 30px;
+    margin-top: 0;
+  }
+
+  section.products .products_list li .dessert_img {
+    background-size: cover;
+    background-position: center center;
+    /* width: 300px; */
+    height: 315px;
+    position: relative;
+  }
+
+  section.products .products_list li .dessert_img .tag {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    font-size: 16px;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    position: relative;
+    left: 10px;
+    letter-spacing: 0.2em;
+    padding: 15px 10px;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon {
+    position: absolute;
+    top: 21px;
+    right: 18px;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon a {
+    text-decoration: none;
+    color: #3F5D45;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon a .container i {
+    position: relative;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon a .container i.not_favorite {
+    right: -28px;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon a .container i.favorite {
+    visibility: hidden;
+  }
+
+  section.products .products_list li .dessert_img .favorite_icon a:hover .container i.favorite {
+    visibility: visible;
+  }
+
+  section.products .products_list li.flan .dessert_img {
+    background-image: url("https://source.unsplash.com/MsTOg6rhRVk");
+  }
+
+  section.products .products_list li.donut .dessert_img {
+    background-image: url("https://source.unsplash.com/POM4KxWZcG8");
+  }
+
+  section.products .products_list li.pie .dessert_img {
+    background-image: url("https://source.unsplash.com/of0pMsWApZE");
+  }
+
+  section.products .products_list li.cookie .dessert_img {
+    background-image: url("https://source.unsplash.com/gw78G_i7GYo");
+  }
+
+  section.products .products_list li.cake .dessert_img {
+    background-image: url("https://source.unsplash.com/8Jg4U4xHu-o");
+  }
+
+  section.products .products_list li.cream .dessert_img {
+    background-image: url("https://source.unsplash.com/PANMCipEL2Y");
+  }
+
+  section.products .products_list li .dessert_name_price {
+    display: grid;
+    grid-template-columns: 173fr 127fr;
+  }
+
+  section.products .products_list li .dessert_name_price div {
+    font-size: 20px;
+    padding: 15px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+  }
+
+  section.products .products_list li .dessert_name_price div + div {
+    border-left: none;
+  }
+
+  section.products .products_list li .add_cart {
+    text-align: center;
+  }
+
+  section.products .products_list li .add_cart a {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    display: block;
+    padding: 20px;
+  }
+
+  section.products .products_list li .add_cart a:hover {
+    background-color: #FFE180;
+  }
+
+  section.products .products_pages {
+
+  }
+
+  section.products .products_pages ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 60px;
+  }
+
+  section.products .products_pages li {
+    text-align: center;
+    border: 1px solid #EAF0ED;
+  }
+
+  section.products .products_pages li + li {
+    border-left: none;
+  }
+
+  section.products .products_pages li a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3F5D45;
+    padding: 20px;
+  }
+
+  section.products .products_pages li a:hover {
+    background-color: #FFE180;
+  }
+
+  section.products .products_pages li.active a {
+    background-color: #3F5D45;
+    color: #EAF0ED
+  }
+  
+}
